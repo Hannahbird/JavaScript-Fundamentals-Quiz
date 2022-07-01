@@ -1,3 +1,13 @@
+:root {
+    --primary-color: hsl(206, 17%, 28%);
+    --secondary-bg-color: #e7e9eb;
+    --btn-color: rgb(17, 158, 135);
+    --font-color: #624D26;
+    --background-color:#f9fbfd;
+    --card-bg-color: hsl(0, 0%, 100%);
+    
+}
+
 *,
 *::before,
 *::after {
@@ -16,12 +26,12 @@ header {
     text-align: center;
     padding: 20px;
     padding-top: 0px;
-    color: hsl(206, 17%, 28%);
+    color: var(--primary-color);
 }
 
 body {
     font-family: sans-serif;
-    background-color: #f9fbfd;
+    background-color: var(--background-color);
   }
 
 .Wrap {
@@ -31,11 +41,11 @@ body {
   }
 
   .card {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--card-bg-color);
     border-radius: 5px;
     border-width: 1px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: hsl(206, 17%, 28%);
+    color: var(--primary-color);
     font-size: 18px;
     margin: 0 auto;
     max-width: 800px;
@@ -46,7 +56,7 @@ body {
   
    #timer {
       font-weight: bolder;
-      color: hsl(206, 17%, 28%);
+      color: var(--primary-color);
       
   }
   
@@ -54,7 +64,7 @@ body {
       content: " ";
       display: block;
       width: 100%;
-      background: #e7e9eb;
+      background: var(--secondary-bg-color);
       height: 2px;
   }
   
@@ -67,7 +77,7 @@ body {
   .answerBtns{
       cursor: pointer;
       border: none;
-      background-color: rgb(17, 158, 135);
+      background-color: var(--btn-color);
       border-radius: 25px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
       color: hsl(0, 0%, 0%);
@@ -81,11 +91,6 @@ body {
   }
   #next {
     float: right;
-}
-
-button[disabled] {
-    cursor:default;
-    background: #c0c7cf;
 }
 
 
