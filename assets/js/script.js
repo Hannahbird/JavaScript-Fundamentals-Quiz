@@ -19,7 +19,7 @@ var questions = [
     {
         question: "The condition in an if / else statement is enclosed within ____.",
         answers: ["Curly Brackets", "Quotes", "Parenthesis", "Periods"],
-        correctAnswer: "JavaScript",
+        correctAnswer: "Parenthesis",
     },
   ];
 var answerEl = document.querySelector(".answerBtns");
