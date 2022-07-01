@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Fundamentals Quiz</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="Wrap" id="Quiz">
-      <button id="startQuiz"> Begin</button>
-    <header>
-      <h1>JavaScript Quiz</h1>
-      <div>Time Remaining: <span id="time">5:00</span></div>
-    </header>
-    <div class="card">
-      <div class="quizBox answerBtns">
-        <h2>Placeholder</h2>
-        <button id="answerA">A</button>
-        <button id="answerB">B</button>
-        <button id="answerC">C</button>
-        <button id="answerD">D</button>
-      </div>
-      <footer>
-        <div class="footerBtn">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
+        <header>
+        <h4 id="highccores">Highscores</h4>
+        <h4>Time Remaining:<span id="timer">2:00</span></h4>
+        <h1>JavaScript Quiz</h1>
+        </header>
+        <div class="card">
+            <button id="begin">Begin</button>
+            <div id="highscores" class="hide">
+              <h2> High Scores </h2>
+              <Input> Your Initials</Input>
+            </div>
           </div>
-    </footer>
-    </div>
-  </body>
-  <script src="assets/js/script.js"></script>
+          <div id="quizEl" class="card hide">
+            <h2 id="questionEl">Question Placeholder</h2>
+            <div class="quizCont">
+              <div class="answerBtns"></div>
+            </div>
+          </div>
+            <div class="quiz-content">
+
+                <!--questions content here-->
+            </div>
+
+            <footer>
+             <div class="footer-btns">
+                <button id="next">Next</button>
+                </div>
+            </footer>
+
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
+
