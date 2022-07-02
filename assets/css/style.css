@@ -2,7 +2,7 @@
     --primary-color: hsl(206, 17%, 28%);
     --secondary-bg-color: #e7e9eb;
     --btn-color: rgb(17, 158, 135);
-    --font-color: #624D26;
+    --footer-btn-color: gray;
     --background-color:#f9fbfd;
     --card-bg-color: hsl(0, 0%, 100%);
     
@@ -104,7 +104,7 @@ footer{
 }
 
 .footer-btns {
-    color: gray;
+    color: var(--footer-btn-color);
     font-style: italic;
     border-top: solid 2px gray;
     flex: 1 100%;
@@ -132,10 +132,6 @@ footer{
         font-size: 1rem;
         margin: 16px 0px 0px 0px;
         padding: 10px 15px;
-    }
-    
-    #password {
-        font-size: 1rem;
     }
 }
 

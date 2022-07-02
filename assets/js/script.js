@@ -1,4 +1,4 @@
-var beginButton = document.getElementById("#begin");
+var beginBtn = document.getElementById("#begin");
 var questionEl = document.getElementById("#questionEl");
 var questions = [
     {
@@ -33,3 +33,27 @@ var twoMins = 60 * 2,
   var score = 0;
 var currentIndex = 0;
 
+beginBtn.addEventListener("click", function() {
+    countdown();
+    startQuiz(questionIndex);
+  });
+  
+  function correctAnswer(event) {
+    var element = event.target;
+    console.log(element);
+
+    if (element.matches("answerBtns")) {
+
+        var createDiv = document.createElement("div");
+        createDiv.setAttribute("id", "createDiv");
+        // correct
+            if (element.textContent == questions[questionIndex].answer) {
+                score ++;
+                alert("That's right. The answer is: " + questions[questionIndex].answer);
+            }
+            else {
+                // incorrect remove 5 seconds 
+                timeLeft = timeLeft - penalty;
+                alert("That's wrong. The correct answer is: " + questions[questionIndex].answer);
+            }
+    }

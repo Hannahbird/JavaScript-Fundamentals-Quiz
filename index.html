@@ -10,16 +10,27 @@
 <body>
     <div class="Wrap" id="Quiz">
         <header>
-        <h4 id="highccores">Highscores</h4>
+        <button id="highscores">Highscores</button>
         <h4>Time Remaining:<span id="timer">2:00</span></h4>
         <h1>JavaScript Quiz</h1>
         </header>
         <div class="card">
             <button id="begin">Begin</button>
-            <div id="highscores" class="hide">
-              <h2> High Scores </h2>
-              <Input> Your Initials</Input>
-            </div>
+            <p>How fast can you anser these questions?</p>
+            <p>Missed questions will result in a time penalty. </br>
+              So answer quick, but answer them right!</p>
+              <div id="highscores" class="hide card2">
+                <h2 class = "highscore"> High Scores </h2>
+                <form name="highScores">
+                  <input type="Text" name="playerIntls"></nput>
+                </form>
+                <br />
+                <button id="scoreBtn" class="answerBtns">
+                  Your Initials
+                </button>
+                <br />
+                <ol></ol>
+              </div>
           </div>
           <div id="quizEl" class="card hide">
             <h2 id="questionEl">Question Placeholder</h2>
@@ -32,14 +43,13 @@
                </footer>
             </div>
           </div>
-            <div class="quiz-content">
-                <!--questions content here-->
+            <!-- <div class="quiz-content">
             </div>
             <footer>
                 <div class="footer-btns">
                    <button id="next">Next</button>
                 </div>
-               </footer>
+               </footer> -->
         </div>
     <script src="./assets/js/script.js"></script>
 </body>
