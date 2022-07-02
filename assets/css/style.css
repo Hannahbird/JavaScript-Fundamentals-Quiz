@@ -1,7 +1,7 @@
 :root {
     --primary-color: hsl(206, 17%, 28%);
     --secondary-bg-color: #e7e9eb;
-    --btn-color: rgb(17, 158, 135);
+    --btn-color: rgb(82, 191, 173);
     --score-btn-color: rgb(47, 100, 215);
     --footer-btn-color: gray;
     --background-color:#f9fbfd;
@@ -42,6 +42,15 @@ header {
     padding-top: 0px;
     color: var(--primary-color);
 }
+#container {
+    margin-left: 68%;
+}
+
+h4 {
+    text-align: right;
+    border-style: groove;
+    color: var(--primary-color);
+}
 
 .card {
   background-color: var(--background-color);
@@ -70,9 +79,13 @@ header {
     cursor: pointer;
 }
 
-/* button{
+button{
     background-color: var(--btn-color);
-} */
+}
+
+#begin {
+    border:inset;
+}
 
 
 #next {

@@ -8,49 +8,44 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-    <div class="Wrap" id="Quiz">
-        <header>
-        <button id="highscores">Highscores</button>
-        <h4>Time Remaining:<span id="timer"> 90 Seconds</span></h4>
-        <h1>JavaScript Quiz</h1>
-        </header>
-        <div class="card">
-            <button id="begin">Begin</button>
-            <p>How fast can you anser these questions?</p>
-            <p>Missed questions will result in a time penalty. </br>
+  <div class="Wrap" id="Quiz">
+    <header>
+        <!-- <button id="highscores">Highscores</button> -->
+    <h1>JavaScript Quiz</h1>
+    </header>
+    <div id="container">
+      <h4>Time Remaining:<span id="timer"> 90 Seconds</span></h4>
+  </div>
+      <div class="card">
+        <button id="begin">Begin</button>
+        <p>How fast can you answer these questions?</p>
+        <p>Missed questions will result in a time penalty. </br>
               So answer quick, but answer them right!</p>
-              <div id="highscores" class="hide card">
-                <h2 class = "highscore"> High Scores </h2>
-                <form name="highScores">
-                  <input type="Text" name="playerIntls"></nput>
-                </form>
-                <br />
-                <button id="scoreBtn" class="answerBtns">
-                  Your Initials
-                </button>
-                <br />
-                <ol></ol>
-              </div>
-          </div>
-          <div id="quizEl" class="hide card2">
-            <h2 id="questionEl">Question Placeholder</h2>
-            <div class="quizCont">
-              <div class="answerBtns"></div>
-              <footer>
-                <div class="footer-btns">
-                   <button id="next">Next</button>
-                </div>
-               </footer>
+      </div>
+              
+      <div id="highscores" class="hide card">
+        <h2 class = "highscore"> High Scores </h2>
+          <form name="highScores">
+            <input type="Text" name="playerIntls"></input>
+          </form>
+            <br />
+            <button id="scoreBtn" class="answerBtns">
+              Type Your Initials
+            </button>
+            <br />
+            <ol></ol>
+      </div>
+
+      <div id="quizEl" class="hide card2">
+        <h2 id="questionEl">Question Placeholder</h2>
+        <div class="quizCont">
+          <div class="answerBtns"></div>
+            <div class="footer-btns">
+                <button id="next">Next</button>
             </div>
-          </div>
-            <!-- <div class="quiz-content">
-            </div>
-            <footer>
-                <div class="footer-btns">
-                   <button id="next">Next</button>
-                </div>
-               </footer> -->
         </div>
+      </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
