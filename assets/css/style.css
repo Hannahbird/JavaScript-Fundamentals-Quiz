@@ -2,9 +2,12 @@
     --primary-color: hsl(206, 17%, 28%);
     --secondary-bg-color: #e7e9eb;
     --btn-color: rgb(17, 158, 135);
+    --score-btn-color: rgb(47, 100, 215);
     --footer-btn-color: gray;
     --background-color:#f9fbfd;
     --card-bg-color: hsl(0, 0%, 100%);
+    --right-color: green;
+    --wrong-color: red;
     
 }
 
@@ -16,10 +19,21 @@
 
 html,
 body,
-.Wrap {
+.wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+}
+
+.Wrap {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 header {
@@ -29,103 +43,79 @@ header {
     color: var(--primary-color);
 }
 
-body {
-    font-family: sans-serif;
-    background-color: var(--background-color);
-  }
-
-.Wrap {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .card {
-    background-color: var(--card-bg-color);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: var(--primary-color);
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 30px 40px;
-  }
-  
-  
-  
-   #timer {
-      font-weight: bolder;
-      color: var(--primary-color);
-      
-  }
-  
-  .card-footer::before {
-      content: " ";
-      display: block;
-      width: 100%;
-      background: var(--secondary-bg-color);
-      height: 2px;
-  }
-  
-  .card-footer::after {
-      content: " ";
-      display: block;
-      clear: both;
-  }
-  
-  .answerBtns{
-      cursor: pointer;
-      border: none;
-      background-color: var(--btn-color);
-      border-radius: 25px;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
-      color: hsl(0, 0%, 0%);
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 20px;
-      line-height: 20px;
-      margin: 16px 16px 16px 20px;
-      padding: 14px 34px;
-      text-align: center;
-  }
-  #next {
-    float: right;
+.card {
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
 }
 
+.choice{
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* button{
+    background-color: var(--btn-color);
+} */
+
+
+#next {
+    float: right;
+    background-color: var(--secondary-bg-color);
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 20px;
+    border: solid 2px black;
+}
+
+#scoreBtn {
+    background-color: var(--score-btn-color);
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 20px;
+    border: solid .5px black;
+}
+
+#highscores .hide {
+    display: flex;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .hide{
-    opacity:0;
+    display: none;
 }
 
-
-footer{
-    flex:1 120%;
+.correct {
+    background-color: var(--right-color);
+}
+.wrong{
+    background-color: var(--wrong-color);
 }
 
-.footer-btns {
-    color: var(--footer-btn-color);
-    font-style: italic;
-    border-top: solid 2px gray;
-    flex: 1 100%;
-    margin-top: 10px;
     
-}
-
-.button {
-    background-color:red;
-    color:white;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 0 10px 10px 0;
-    border: none;
-    list-style-position: inside;
-}
-
-.quizCont {
-    justify-content: space-between;
-}
 
 @media (max-width: 690px) {
     .btn {
