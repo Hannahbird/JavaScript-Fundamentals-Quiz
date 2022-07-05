@@ -18,3 +18,9 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+## REPO Link
+https://github.com/Hannahbird/JavaScript-Fundamentals-Quiz.git
+
+## Deployed Link
+https://hannahbird.github.io/JavaScript-Fundamentals-Quiz/
