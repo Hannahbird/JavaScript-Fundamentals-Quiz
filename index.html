@@ -5,46 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />   
   </head>
-  <body>
-    <div class="wrap" id="quiz">
-      <header>
-        <h1>JavaScript Fundamentals Quiz</h1>
-        <div>Time Left: <span id="time"></span></div>
-      </header>
-      
-      <div class="card">
-        <button id="beginBtn">Begin</button>
-        <p>How fast can you answer these questions?</p>
-        <p>Missed questions will result in a time penalty. </br>
-              So answer quick, but answer them right!</p>
-      </div>
-      
-      <div id="quiz-elements" class="card hide">
-        <h2 id="question-placeholder">Placeholder</h2>
-        <div class="quizContainer">
-          <div class="answerBtns"></div>
-        </div>
-        <div class="nextBtn">
-          <button id="next">Next</button>
-          <br />
+<body>
+  <nav>
+      <a href="./scoreSheet.html">High Scores</a>
+      <h2 id="timer"></h2>
+  </nav>
+  <main>
+      <div class="container" id="quiz">
+        <header>
+          <h1 class="hello">JavaScript Fundamentals Quiz</h1>
+        </header>
+        <div class ="card">
+        <button id="start">Begin Quiz</button>
+          <h3><p>How fast can you answer these questions?</p>
+            <p>Missed questions will result in a time penalty of 10 seconds. </br>
+                  So answer quick, but answer them right!</p>
+          </h3>
         </div>
       </div>
-    
-      <div id="highscoreCard" class="hide card2">
-        <h2 class = "highScore"> High Scores </h2>
-        <form name="highScoresList">
-          <input type="text" name="playerInitials"></nput>
-        </form>
-        <br />
-        <button id="scoreBtn" class="answerBtns">Your Initials</button>
-        <br />
-        <ol></ol>
-      </div> 
-   
-  </body>
-    <script src="assets/js/script.js"></script>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <footer>
+      &copy;Hannah Brownson 2022
+  </footer> 
+</body>
 </html>
 

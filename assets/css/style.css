@@ -19,7 +19,7 @@
 
 html,
 body,
-.wrapper {
+.container {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -30,7 +30,12 @@ body {
   background-color: var(--background-color);
 }
 
-.Wrap {
+#quiz {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -42,55 +47,110 @@ header {
     padding-top: 0px;
     color: var(--primary-color);
 }
-#container {
-    margin-left: 68%;
-}
-
-h4 {
-    text-align: right;
-    border-style: groove;
-    color: var(--primary-color);
-}
 
 .card {
-  background-color: var(--background-color);
+  background-color: var(--card-bg-color);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: var(--primary-color);
+  color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
-.choice{
-    border: none;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+.hello {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+#choices {
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    font-size: 22px;
-    line-height: 22px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
-}
-
-button{
     background-color: var(--btn-color);
+    padding: 10px;
+    color: white;
+    border-radius: 10%;
+    margin: 20px;
 }
 
-#begin {
-    border:inset;
+#choices:hover {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--score-btn-color);
+    padding: 10px;
+    color: white;
+    border-radius: 5%;
+    margin: 20px;
+  }
+
+h2 {
+    color: black;
+    font-size: small;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: black;
+    font-size: small;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+nav {
+    color: black;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+nav a {
+      color: var(--primary-color);
+      font-family: sans-serif;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+  }
+
+  #backBtn, #clear {
+    font-size: small;
+    margin: 5px;
+}
+
+#highScore {
+    color: var(--primary-color);
+    font-size: large;
+    font-weight: bold;
 }
 
 
+  button {
+    background-color: var(--footer-btn-color);
+    padding: 5px;
+    color: black;
+    border: outset;
+    font-size: large;
+    margin: 10px;
+  }
+
+  button:active {
+    background-color: var(--btn-color);
+    padding: 5px;
+    color: black;
+    border: inset;
+    font-size: large;
+    margin: 10px;
+  }
+
+/* 
 #next {
     float: right;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--background-color);
     border-radius: 25px;
     font-size: 16px;
     line-height: 22px;
@@ -98,48 +158,52 @@ button{
     border: solid 2px black;
 }
 
-#scoreBtn {
-    background-color: var(--score-btn-color);
-    border-radius: 25px;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 9px 20px;
-    border: solid .5px black;
-}
-
-#highscores .hide {
-    display: flex;
-}
-
-.card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hide{
-    display: none;
-}
-
 .correct {
-    background-color: var(--right-color);
+    background-color: var (--right-color);
 }
 .wrong{
-    background-color: var(--wrong-color);
+    background-color: var (--wrong-color);
+} */
+
+footer {
+    margin-top: 100px;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--footer-btn-color);
+    text-align: right;
 }
 
     
-
-@media (max-width: 690px) {
-    .btn {
-        font-size: 1rem;
-        margin: 16px 0px 0px 0px;
-        padding: 10px 15px;
+/* desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    footer {
+      text-align: center;
+      width: 100%;
     }
 }
-
-@media (max-width: 500px) {
-    .btn {
-        font-size: 0.8rem;
+/* tablet and smaller screen sizes */
+@media screen and (max-width: 768px) {
+    main {
+      padding: 30px 15px;
     }
 }
